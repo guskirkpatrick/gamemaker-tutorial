@@ -1,0 +1,110 @@
+p{
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-stretch: expanded;
+    color: white;
+    font: 20px Arial, sans-serif;
+    border: 5px solid black;
+    
+    }
+    h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: gray;
+    border: 1px solid #660006;
+    margin: 10px 15px 10px 15px;
+    padding: 10px 10px 10px 10px;
+    font-variant: small-caps;
+    font-size: large;
+    
+    }
+    h2 {
+    color: white;
+    text-align: center;
+    background-color: lightgrey;
+    font-size: larger;
+    font-style: italic;
+    font-weight: bold
+    margin: 10px 15px 10px 15px;
+    padding: 10px 10px 10px 10px;
+    
+    }
+    h3 {
+        text-align: center;
+        color: white;
+        background-color: navy;
+        font-weight: bold
+    }
+    
+    .Ingredients, .Directions{
+        background-color:rgb(114, 152, 165);
+        border: 3px yellowgreen;
+    }
+    .Container{
+        background-color:lightblue;
+        max-width: 960px;
+        margin: 1em auto;
+    
+    }
+    .sidebox{
+        background-color:brown;
+    margin: 1em auto;
+    /*max-width: 100px;
+    text-align: left;*/
+    
+    
+    }
+    img {
+        width: 100%;
+        height: auto;
+        }
+    
+        span.open-button {
+            padding:10px 20px;
+            font-size:24px;  /* This controls the size of the button text */
+            cursor: pointer; /* This provides feedback that an interaction can take place with this button */
+            }
+          
+          span.open-button:hover {  
+            color:gold;
+            }  /* :hover allows you to change the color of a link when you hover over it */
+          
+          .sidenav {
+            position: fixed; /* this fixes your nav's position- see top and left */ 
+            z-index: 1;
+            top: 0; /* It starts height/width from the top left corner of the screen */ 
+            left: 0;
+            height: 100%; /* forces the nav to go the full height of your screen */ 
+            width: 0; /* the default width is 0 -- hidden, the JS changes it to 250px */
+            background-color: #111; /* feel free to use any color for your nav, just make sure the your links are readable on this background (high contrast) */ 
+            overflow-x: hidden;
+            transition: 0.5s; /* speed in seconds for the opening animation */
+            padding-top: 50px; 
+          }
+          
+          .sidenav a {
+            padding: 8px 8px 8px 0px;
+            text-decoration: none;
+            font-size: 24px;  /* size of your navigation links */
+            color: #eee;
+            display: block;
+            transition: 0.3s; /* you'll see the links slide in and out as well */
+          }
+          
+          .sidenav a:hover {
+            text-decoration: underline;  /* adds link underlines on cursor hover */
+          }
+          
+          .sidenav .closebtn {
+            position: absolute;  /* this positions the closing X button */
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+          
+          @media screen and (max-height: 450px) {  /* mobile screen adjustments */   
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+          }
+    
